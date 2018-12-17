@@ -7,3 +7,10 @@
 //
 
 import Foundation
+import UIKit
+
+extension AppDelegate {
+    static func shared() -> AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
+    }
+}

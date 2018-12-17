@@ -6,4 +6,10 @@
 //  Copyright © 2018 Mine. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+extension UIApplication {
+    var statusBarView: UIView? {
+        return value(forKey: "statusBar") as? UIView
+    }
+}
