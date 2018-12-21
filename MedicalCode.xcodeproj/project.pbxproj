@@ -8,34 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		770EC99F21C6CDF900FAEFA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770EC99E21C6CDF900FAEFA1 /* AppDelegate.swift */; };
-		770EC9A121C6CDF900FAEFA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770EC9A021C6CDF900FAEFA1 /* ViewController.swift */; };
+		770EC9A121C6CDF900FAEFA1 /* ServicesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770EC9A021C6CDF900FAEFA1 /* ServicesVC.swift */; };
 		770EC9A421C6CDF900FAEFA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 770EC9A221C6CDF900FAEFA1 /* Main.storyboard */; };
 		770EC9A621C6CDF900FAEFA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 770EC9A521C6CDF900FAEFA1 /* Assets.xcassets */; };
 		770EC9A921C6CDF900FAEFA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 770EC9A721C6CDF900FAEFA1 /* LaunchScreen.storyboard */; };
 		770EC9BA21C6D20E00FAEFA1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770EC9B921C6D20E00FAEFA1 /* UIColor+Extension.swift */; };
 		770EC9BC21C6D8F600FAEFA1 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770EC9BB21C6D8F600FAEFA1 /* UIApplication+Extension.swift */; };
+		7731B9F021CBD00D007EF23F /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731B9EF21CBD00D007EF23F /* TabBarVC.swift */; };
+		7731B9F221CBD143007EF23F /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731B9F121CBD143007EF23F /* FavoritesVC.swift */; };
+		7731B9F421CBD15F007EF23F /* AppointmentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731B9F321CBD15F007EF23F /* AppointmentsVC.swift */; };
 		7789CBF221C6DDEE008A966B /* UIViewController+NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7789CBF121C6DDEE008A966B /* UIViewController+NavBar.swift */; };
 		7789CBF421C6DE84008A966B /* AppDelegate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7789CBF321C6DE84008A966B /* AppDelegate+Extension.swift */; };
 		7789CBFA21C6E4E4008A966B /* GE_SS_Text_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7789CBF721C6E4E4008A966B /* GE_SS_Text_Bold.otf */; };
 		7789CBFB21C6E4E4008A966B /* GE_SS_Text_Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7789CBF821C6E4E4008A966B /* GE_SS_Text_Light.otf */; };
 		7789CBFC21C6E4E4008A966B /* GE-SS-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7789CBF921C6E4E4008A966B /* GE-SS-Text-Medium.otf */; };
+		77B4D2E421CBC9E3006EF9E2 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B4D2E321CBC9E3006EF9E2 /* SearchVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		770EC99B21C6CDF900FAEFA1 /* MedicalCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		770EC99E21C6CDF900FAEFA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		770EC9A021C6CDF900FAEFA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		770EC9A021C6CDF900FAEFA1 /* ServicesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesVC.swift; sourceTree = "<group>"; };
 		770EC9A321C6CDF900FAEFA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		770EC9A521C6CDF900FAEFA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		770EC9A821C6CDF900FAEFA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		770EC9AA21C6CDF900FAEFA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		770EC9B921C6D20E00FAEFA1 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		770EC9BB21C6D8F600FAEFA1 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		7731B9EF21CBD00D007EF23F /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		7731B9F121CBD143007EF23F /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
+		7731B9F321CBD15F007EF23F /* AppointmentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsVC.swift; sourceTree = "<group>"; };
 		7789CBF121C6DDEE008A966B /* UIViewController+NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NavBar.swift"; sourceTree = "<group>"; };
 		7789CBF321C6DE84008A966B /* AppDelegate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Extension.swift"; sourceTree = "<group>"; };
 		7789CBF721C6E4E4008A966B /* GE_SS_Text_Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GE_SS_Text_Bold.otf; sourceTree = "<group>"; };
 		7789CBF821C6E4E4008A966B /* GE_SS_Text_Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GE_SS_Text_Light.otf; sourceTree = "<group>"; };
 		7789CBF921C6E4E4008A966B /* GE-SS-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GE-SS-Text-Medium.otf"; sourceTree = "<group>"; };
+		77B4D2E321CBC9E3006EF9E2 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +109,8 @@
 		770EC9B221C6CFB500FAEFA1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				770EC9A021C6CDF900FAEFA1 /* ViewController.swift */,
+				7731B9EE21CBCFAA007EF23F /* TabBar */,
+				77B4D2E221CBC98E006EF9E2 /* Main */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -155,6 +164,25 @@
 				770EC9A721C6CDF900FAEFA1 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7731B9EE21CBCFAA007EF23F /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				7731B9EF21CBD00D007EF23F /* TabBarVC.swift */,
+				7731B9F121CBD143007EF23F /* FavoritesVC.swift */,
+				7731B9F321CBD15F007EF23F /* AppointmentsVC.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		77B4D2E221CBC98E006EF9E2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				770EC9A021C6CDF900FAEFA1 /* ServicesVC.swift */,
+				77B4D2E321CBC9E3006EF9E2 /* SearchVC.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,11 +261,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				770EC9BA21C6D20E00FAEFA1 /* UIColor+Extension.swift in Sources */,
-				770EC9A121C6CDF900FAEFA1 /* ViewController.swift in Sources */,
+				770EC9A121C6CDF900FAEFA1 /* ServicesVC.swift in Sources */,
+				7731B9F421CBD15F007EF23F /* AppointmentsVC.swift in Sources */,
 				770EC9BC21C6D8F600FAEFA1 /* UIApplication+Extension.swift in Sources */,
 				770EC99F21C6CDF900FAEFA1 /* AppDelegate.swift in Sources */,
 				7789CBF421C6DE84008A966B /* AppDelegate+Extension.swift in Sources */,
+				7731B9F221CBD143007EF23F /* FavoritesVC.swift in Sources */,
 				7789CBF221C6DDEE008A966B /* UIViewController+NavBar.swift in Sources */,
+				7731B9F021CBD00D007EF23F /* TabBarVC.swift in Sources */,
+				77B4D2E421CBC9E3006EF9E2 /* SearchVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

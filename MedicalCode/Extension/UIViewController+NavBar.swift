@@ -29,16 +29,16 @@ extension UIViewController{
     func addCustomBackButton() {
         let backIcon = UIImage(named: "backArrow")
         let backButton = UIBarButtonItem(image: backIcon, style: .plain, target: self, action:  #selector(backButtonPressed))
-        self.navigationItem.leftBarButtonItem = backButton
+        self.navigationItem.rightBarButtonItem = backButton
     }
     func addBackToRootLeftBtn() {
         let backIcon = UIImage(named: "backArrow")
         let backButton = UIBarButtonItem(image: backIcon, style: .plain, target: self, action:  #selector(backButtonPressAction))
-        self.navigationItem.leftBarButtonItem = backButton
+        self.navigationItem.rightBarButtonItem = backButton
     }
     func addSettingsBtn() {
         let settingsButton = UIBarButtonItem(image: #imageLiteral(resourceName: "icSettings"), style: .plain, target: self, action:  #selector(settingsButtonPressed))
-        self.navigationItem.rightBarButtonItem = settingsButton
+        self.navigationItem.leftBarButtonItem = settingsButton
     }
     
     func addNavItems(){
