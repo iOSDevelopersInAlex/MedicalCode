@@ -91,6 +91,9 @@
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0W-1U-Lvq">
                                                 <rect key="frame" x="0.5" y="-0.5" width="157" height="108"/>
                                                 <fontDescription key="fontDescription" name="GESSTextMedium-Medium" family="GE SS" pointSize="15"/>
+                                                <connections>
+                                                    <action selector="mriBtnPressed:" destination="3f8-WE-lit" eventType="touchUpInside" id="wFH-Qo-33U"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.83529411760000005" green="0.72941176470000002" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -163,6 +166,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bp7-w9-raJ">
                                                 <rect key="frame" x="0.5" y="0.0" width="157" height="108.5"/>
                                                 <fontDescription key="fontDescription" name="GESSTextMedium-Medium" family="GE SS" pointSize="13"/>
+                                                <connections>
+                                                    <action selector="homeNurse:" destination="3f8-WE-lit" eventType="touchUpInside" id="gWW-H1-TfX"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.90196078430000004" green="0.35294117650000001" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -197,6 +203,9 @@
                                             </label>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGp-QJ-GGy">
                                                 <rect key="frame" x="0.5" y="0.0" width="157" height="108.5"/>
+                                                <connections>
+                                                    <action selector="veterinary:" destination="3f8-WE-lit" eventType="touchUpInside" id="CfG-os-WfE"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.29411764709999999" green="0.75686274509999996" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -598,6 +607,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mnX-Yo-rkM"/>
                     </view>
+                    <connections>
+                        <outlet property="city_TF" destination="alj-0m-ox0" id="HJV-PP-egR"/>
+                        <outlet property="companies_TF" destination="Za7-nk-y5C" id="2dO-EO-EbL"/>
+                        <outlet property="doctorName_TF" destination="9nU-y2-hky" id="OHH-Id-A9Q"/>
+                        <outlet property="region_TF" destination="41l-if-GpO" id="wth-s9-Bmg"/>
+                        <outlet property="specaliazation_TF" destination="ACj-fn-C9o" id="VtM-FE-NZS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iUs-3y-rBL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
