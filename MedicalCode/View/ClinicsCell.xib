@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="270" id="KGk-i7-Jjw" customClass="ClinicsCell" customModule="MedicalCode" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="270"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="269.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pFt-53-z0Z">
+                        <rect key="frame" x="0.0" y="267.5" width="375" height="1.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1.5" id="qfq-8y-cCc"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icBottomMenuMyFavorites" translatesAutoresizingMaskIntoConstraints="NO" id="GKV-LH-F0M">
+                        <rect key="frame" x="16" y="18" width="23" height="21.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21.5" id="Fvi-qJ-TDZ"/>
+                            <constraint firstAttribute="width" constant="23" id="Qh6-ho-AqW"/>
+                        </constraints>
+                    </imageView>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icRemoveFavorites" translatesAutoresizingMaskIntoConstraints="NO" id="Lmf-zX-Hhi">
+                        <rect key="frame" x="16" y="18" width="23" height="21.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="23" id="GKy-yo-LLQ"/>
+                            <constraint firstAttribute="height" constant="21.5" id="uFY-EP-flk"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCg-Am-e8C">
+                        <rect key="frame" x="5" y="7.5" width="46" height="43"/>
+                        <connections>
+                            <action selector="add_deleteFavoriteBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bRe-2C-oYU"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AES-O7-2L0">
+                        <rect key="frame" x="304.5" y="18" width="52.5" height="52"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="52.5" id="1d1-vs-97k"/>
+                            <constraint firstAttribute="height" constant="52.5" id="c1Z-kL-BHR"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableLocalization" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doctor Mohamed Halim" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="StR-HA-U2z" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                        <rect key="frame" x="46" y="18" width="248" height="13"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableLocalization" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCf-yj-e6G" customClass="CosmosView" customModule="Cosmos">
+                        <rect key="frame" x="219" y="38.5" width="75" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10.5" id="ODp-c2-1Z7"/>
+                            <constraint firstAttribute="width" constant="75" id="Ust-1t-J3f"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="filledImage" value="rating-yes"/>
+                            <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="rating-no"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableLocalization" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dentist" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qY-OV-84w" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                        <rect key="frame" x="46" y="57" width="248" height="13"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableLocalization" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icSpecialitySearchResults" translatesAutoresizingMaskIntoConstraints="NO" id="DJw-nV-THi">
+                        <rect key="frame" x="341.5" y="91" width="15.5" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15.5" id="Ta4-2X-3AC"/>
+                            <constraint firstAttribute="height" constant="17" id="jOV-aj-Ki6"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableLocalization" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icDoctorAddressSearchResults" translatesAutoresizingMaskIntoConstraints="NO" id="qvd-eR-xTq">
+                        <rect key="frame" x="343" y="116" width="12.5" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12.5" id="9cH-F4-iqB"/>
+                            <constraint firstAttribute="height" constant="17" id="Uel-Y1-9OJ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableLocalization" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icWaitingTimeSearchResults" translatesAutoresizingMaskIntoConstraints="NO" id="An0-GH-0e6">
+                        <rect key="frame" x="341.5" y="140.5" width="15.5" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15.5" id="8iP-7n-frY"/>
+                            <constraint firstAttribute="height" constant="17" id="Uex-uj-PGl"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableLocalization" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icExaminationFeesSearchResults" translatesAutoresizingMaskIntoConstraints="NO" id="TZQ-fK-2Is">
+                        <rect key="frame" x="341.5" y="165" width="15.5" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15.5" id="VYK-hX-Of8"/>
+                            <constraint firstAttribute="height" constant="17" id="sjA-uf-fBg"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableLocalization" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pediatric Anesthesiology Anesthesiology" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fw6-ue-JgK" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                        <rect key="frame" x="44" y="93.5" width="287" height="13.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="11.5"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableLocalization" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waiting Time : 30 minutes" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVV-Hn-EkQ">
+                        <rect key="frame" x="197.5" y="143" width="133" height="13.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="11.5"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableLocalization" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Examination Fees : 250 LE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Uk-XA-W7a">
+                        <rect key="frame" x="193.5" y="167.5" width="137" height="13.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="11.5"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableLocalization" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Al Maadi : El tawfeek Tower - 29 Mostafa Kamel Street " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3Z-nQ-lDD" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                        <rect key="frame" x="43.5" y="118.5" width="287" height="13.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="11.5"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableLocalization" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmb-R4-ztB">
+                        <rect key="frame" x="131.5" y="219.5" width="112.5" height="35"/>
+                        <color key="backgroundColor" red="0.52156862745098043" green="0.80392156862745101" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
+                        <state key="normal" title="BookNow">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="7.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableLocalization" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="bookNowBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="wrL-bx-l0p"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AfterDiscount : 250 LE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4I-8D-71Z">
+                        <rect key="frame" x="215" y="192" width="115.5" height="13.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="11.5"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableLocalization" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icExaminationFeesSearchResults" translatesAutoresizingMaskIntoConstraints="NO" id="VNq-5z-8V0">
+                        <rect key="frame" x="341.5" y="189.5" width="15.5" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="3Oh-rk-3Co"/>
+                            <constraint firstAttribute="width" constant="15.5" id="fgg-qt-SFH"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableLocalization" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120 Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbD-oa-ap6">
+                        <rect key="frame" x="156.5" y="39" width="51.5" height="10.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="9"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8qY-OV-84w" firstAttribute="trailing" secondItem="aCf-yj-e6G" secondAttribute="trailing" id="14O-Vv-603"/>
+                    <constraint firstItem="StR-HA-U2z" firstAttribute="leading" secondItem="GKV-LH-F0M" secondAttribute="trailing" constant="7" id="2TR-WZ-2EQ"/>
+                    <constraint firstAttribute="bottom" secondItem="pFt-53-z0Z" secondAttribute="bottom" constant="0.5" id="3RE-7F-40t"/>
+                    <constraint firstItem="WVV-Hn-EkQ" firstAttribute="centerY" secondItem="An0-GH-0e6" secondAttribute="centerY" id="4iU-8G-nHP"/>
+                    <constraint firstItem="DJw-nV-THi" firstAttribute="trailing" secondItem="AES-O7-2L0" secondAttribute="trailing" id="4pg-mZ-sfS"/>
+                    <constraint firstItem="Lmf-zX-Hhi" firstAttribute="centerY" secondItem="GKV-LH-F0M" secondAttribute="centerY" id="5kA-NN-px7"/>
+                    <constraint firstItem="gmb-R4-ztB" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.13" id="6za-XY-tVU"/>
+                    <constraint firstItem="TZQ-fK-2Is" firstAttribute="top" secondItem="An0-GH-0e6" secondAttribute="bottom" constant="7.5" id="An3-gE-s9Z"/>
+                    <constraint firstItem="4Uk-XA-W7a" firstAttribute="centerY" secondItem="TZQ-fK-2Is" secondAttribute="centerY" id="BLo-xP-ffl"/>
+                    <constraint firstItem="n4I-8D-71Z" firstAttribute="trailing" secondItem="4Uk-XA-W7a" secondAttribute="trailing" id="Dxl-XD-E3L"/>
+                    <constraint firstItem="Lmf-zX-Hhi" firstAttribute="centerX" secondItem="GKV-LH-F0M" secondAttribute="centerX" id="E0e-Pm-Ryg"/>
+                    <constraint firstItem="An0-GH-0e6" firstAttribute="centerX" secondItem="qvd-eR-xTq" secondAttribute="centerX" id="EYD-ka-Hrn"/>
+                    <constraint firstItem="n4I-8D-71Z" firstAttribute="centerY" secondItem="VNq-5z-8V0" secondAttribute="centerY" id="Ebp-7a-qxr"/>
+                    <constraint firstItem="4Uk-XA-W7a" firstAttribute="trailing" secondItem="WVV-Hn-EkQ" secondAttribute="trailing" id="Eju-XM-VGO"/>
+                    <constraint firstItem="VNq-5z-8V0" firstAttribute="top" secondItem="TZQ-fK-2Is" secondAttribute="bottom" constant="7.5" id="F0h-p6-DBj"/>
+                    <constraint firstItem="DJw-nV-THi" firstAttribute="leading" secondItem="Fw6-ue-JgK" secondAttribute="trailing" constant="10.5" id="GD0-22-eWC"/>
+                    <constraint firstAttribute="leading" secondItem="GKV-LH-F0M" secondAttribute="leading" constant="-16" id="GNQ-Z2-c4F"/>
+                    <constraint firstItem="Fw6-ue-JgK" firstAttribute="centerY" secondItem="DJw-nV-THi" secondAttribute="centerY" id="Ji7-j0-R2h"/>
+                    <constraint firstItem="WVV-Hn-EkQ" firstAttribute="trailing" secondItem="l3Z-nQ-lDD" secondAttribute="trailing" id="Klk-Se-uX4"/>
+                    <constraint firstItem="8qY-OV-84w" firstAttribute="bottom" secondItem="AES-O7-2L0" secondAttribute="bottom" id="Lp2-J6-Yme"/>
+                    <constraint firstItem="AES-O7-2L0" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailing" constant="-18" id="Lro-O1-rIs"/>
+                    <constraint firstItem="VNq-5z-8V0" firstAttribute="centerX" secondItem="TZQ-fK-2Is" secondAttribute="centerX" id="Oly-Zv-Yct"/>
+                    <constraint firstItem="Lmf-zX-Hhi" firstAttribute="height" secondItem="GKV-LH-F0M" secondAttribute="height" id="OoR-fQ-fVH"/>
+                    <constraint firstItem="l3Z-nQ-lDD" firstAttribute="centerY" secondItem="qvd-eR-xTq" secondAttribute="centerY" id="Oqm-o1-YBx"/>
+                    <constraint firstItem="pFt-53-z0Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Osu-pd-GYC"/>
+                    <constraint firstItem="aCf-yj-e6G" firstAttribute="leading" secondItem="kbD-oa-ap6" secondAttribute="trailing" constant="11" id="Qjf-LT-yv9"/>
+                    <constraint firstAttribute="trailing" secondItem="pFt-53-z0Z" secondAttribute="trailing" id="Uxd-VX-GHj"/>
+                    <constraint firstItem="8qY-OV-84w" firstAttribute="width" secondItem="StR-HA-U2z" secondAttribute="width" id="V5C-uY-d9b"/>
+                    <constraint firstItem="AES-O7-2L0" firstAttribute="leading" secondItem="StR-HA-U2z" secondAttribute="trailing" constant="10.5" id="WUn-ox-fDY"/>
+                    <constraint firstItem="gmb-R4-ztB" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.3" id="XDz-AP-lrH"/>
+                    <constraint firstItem="Lmf-zX-Hhi" firstAttribute="width" secondItem="GKV-LH-F0M" secondAttribute="width" id="YGI-Dc-0e6"/>
+                    <constraint firstItem="aCf-yj-e6G" firstAttribute="trailing" secondItem="StR-HA-U2z" secondAttribute="trailing" id="Zl7-wv-CKf"/>
+                    <constraint firstItem="DJw-nV-THi" firstAttribute="top" secondItem="AES-O7-2L0" secondAttribute="bottom" constant="21" id="a6Q-Tb-h9j"/>
+                    <constraint firstItem="qvd-eR-xTq" firstAttribute="centerX" secondItem="DJw-nV-THi" secondAttribute="centerX" id="aXf-4k-ost"/>
+                    <constraint firstItem="NCg-Am-e8C" firstAttribute="centerY" secondItem="GKV-LH-F0M" secondAttribute="centerY" id="bd9-j7-nbe"/>
+                    <constraint firstItem="TZQ-fK-2Is" firstAttribute="centerX" secondItem="An0-GH-0e6" secondAttribute="centerX" id="c9g-s9-jcn"/>
+                    <constraint firstItem="qvd-eR-xTq" firstAttribute="top" secondItem="DJw-nV-THi" secondAttribute="bottom" constant="7.5" id="cF4-5s-rmK"/>
+                    <constraint firstItem="An0-GH-0e6" firstAttribute="top" secondItem="qvd-eR-xTq" secondAttribute="bottom" constant="7.5" id="d4c-MO-lUM"/>
+                    <constraint firstItem="Fw6-ue-JgK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="44" id="dAN-dq-gXv"/>
+                    <constraint firstItem="AES-O7-2L0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="fes-zJ-k3O"/>
+                    <constraint firstItem="StR-HA-U2z" firstAttribute="top" secondItem="AES-O7-2L0" secondAttribute="top" id="gz0-Ds-dHz"/>
+                    <constraint firstItem="NCg-Am-e8C" firstAttribute="height" secondItem="GKV-LH-F0M" secondAttribute="height" multiplier="2" id="hvg-wT-0Qu"/>
+                    <constraint firstItem="aCf-yj-e6G" firstAttribute="centerY" secondItem="AES-O7-2L0" secondAttribute="centerY" id="jTw-gH-lCS"/>
+                    <constraint firstItem="l3Z-nQ-lDD" firstAttribute="width" secondItem="Fw6-ue-JgK" secondAttribute="width" id="kwA-kD-7rv"/>
+                    <constraint firstItem="pFt-53-z0Z" firstAttribute="top" secondItem="gmb-R4-ztB" secondAttribute="bottom" constant="13" id="m8e-jK-Dj5"/>
+                    <constraint firstItem="gmb-R4-ztB" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="mkx-9f-ti9"/>
+                    <constraint firstItem="NCg-Am-e8C" firstAttribute="centerX" secondItem="GKV-LH-F0M" secondAttribute="centerX" id="oHY-op-nK8"/>
+                    <constraint firstItem="NCg-Am-e8C" firstAttribute="width" secondItem="GKV-LH-F0M" secondAttribute="width" multiplier="2" id="phB-eW-mJh"/>
+                    <constraint firstItem="GKV-LH-F0M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="q2s-TP-vqe"/>
+                    <constraint firstItem="kbD-oa-ap6" firstAttribute="centerY" secondItem="aCf-yj-e6G" secondAttribute="centerY" id="rop-UQ-7Sn"/>
+                    <constraint firstItem="l3Z-nQ-lDD" firstAttribute="trailing" secondItem="Fw6-ue-JgK" secondAttribute="trailing" id="seG-zx-A0C"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addToFavoritesImageView" destination="GKV-LH-F0M" id="q8k-ew-f5u"/>
+                <outlet property="add_remove_btn" destination="NCg-Am-e8C" id="GqF-Tn-2Gz"/>
+                <outlet property="address_lbl" destination="l3Z-nQ-lDD" id="Vub-hS-rnp"/>
+                <outlet property="afterDiscount_lbl" destination="n4I-8D-71Z" id="zQ2-9W-2Bx"/>
+                <outlet property="bookNow_btn" destination="gmb-R4-ztB" id="uh7-Xi-Ki5"/>
+                <outlet property="doctorImageView" destination="AES-O7-2L0" id="dVo-4d-djw"/>
+                <outlet property="doctorName_lbl" destination="StR-HA-U2z" id="9Aq-SL-Fti"/>
+                <outlet property="doctorTitle_lbl" destination="8qY-OV-84w" id="JEy-QI-aF2"/>
+                <outlet property="examinationFees_lbl" destination="4Uk-XA-W7a" id="Xp4-I3-ybr"/>
+                <outlet property="feesAfterDiscountIcon" destination="VNq-5z-8V0" id="MWa-p3-YQz"/>
+                <outlet property="ratingView" destination="aCf-yj-e6G" id="IEN-Ye-MIP"/>
+                <outlet property="removeFromFavoritesImageView" destination="Lmf-zX-Hhi" id="OVN-kO-L9N"/>
+                <outlet property="reviews_lbl" destination="kbD-oa-ap6" id="nQZ-vf-h8z"/>
+                <outlet property="subSpecialistiesImageView" destination="DJw-nV-THi" id="bDT-49-VGe"/>
+                <outlet property="subSpecialisties_lb" destination="Fw6-ue-JgK" id="pke-wf-2RH"/>
+                <outlet property="waitingTime_lbl" destination="WVV-Hn-EkQ" id="jxN-it-WW4"/>
+            </connections>
+            <point key="canvasLocation" x="19.5" y="25"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icBottomMenuMyFavorites" width="23" height="21"/>
+        <image name="icDoctorAddressSearchResults" width="12" height="17"/>
+        <image name="icExaminationFeesSearchResults" width="10" height="18"/>
+        <image name="icRemoveFavorites" width="18" height="18"/>
+        <image name="icSpecialitySearchResults" width="15" height="17"/>
+        <image name="icWaitingTimeSearchResults" width="15" height="14"/>
+        <image name="rating-no" width="13" height="12"/>
+        <image name="rating-yes" width="13" height="12"/>
+    </resources>
+</document>

@@ -14,18 +14,28 @@
 		770EC9A921C6CDF900FAEFA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 770EC9A721C6CDF900FAEFA1 /* LaunchScreen.storyboard */; };
 		770EC9BA21C6D20E00FAEFA1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770EC9B921C6D20E00FAEFA1 /* UIColor+Extension.swift */; };
 		770EC9BC21C6D8F600FAEFA1 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770EC9BB21C6D8F600FAEFA1 /* UIApplication+Extension.swift */; };
+		77224A6121CFA9E4000C26AF /* ClinicsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77224A5F21CFA9E4000C26AF /* ClinicsCell.swift */; };
+		77224A6221CFA9E4000C26AF /* ClinicsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77224A6021CFA9E4000C26AF /* ClinicsCell.xib */; };
+		77224A6421CFB72E000C26AF /* UIImageView+Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77224A6321CFB72E000C26AF /* UIImageView+Rounded.swift */; };
+		77224A6621CFB9E3000C26AF /* UITextField+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77224A6521CFB9E3000C26AF /* UITextField+Style.swift */; };
 		7731B9F021CBD00D007EF23F /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731B9EF21CBD00D007EF23F /* TabBarVC.swift */; };
 		7731B9F221CBD143007EF23F /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731B9F121CBD143007EF23F /* FavoritesVC.swift */; };
 		7731B9F421CBD15F007EF23F /* AppointmentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731B9F321CBD15F007EF23F /* AppointmentsVC.swift */; };
+		7764DD9D21CFA6DF00931FED /* SearchResults.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7764DD9C21CFA6DF00931FED /* SearchResults.storyboard */; };
+		7764DD9F21CFA73200931FED /* SearchResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7764DD9E21CFA73200931FED /* SearchResultsVC.swift */; };
 		7789CBF221C6DDEE008A966B /* UIViewController+NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7789CBF121C6DDEE008A966B /* UIViewController+NavBar.swift */; };
 		7789CBF421C6DE84008A966B /* AppDelegate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7789CBF321C6DE84008A966B /* AppDelegate+Extension.swift */; };
 		7789CBFA21C6E4E4008A966B /* GE_SS_Text_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7789CBF721C6E4E4008A966B /* GE_SS_Text_Bold.otf */; };
 		7789CBFB21C6E4E4008A966B /* GE_SS_Text_Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7789CBF821C6E4E4008A966B /* GE_SS_Text_Light.otf */; };
 		7789CBFC21C6E4E4008A966B /* GE-SS-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7789CBF921C6E4E4008A966B /* GE-SS-Text-Medium.otf */; };
 		77B4D2E421CBC9E3006EF9E2 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B4D2E321CBC9E3006EF9E2 /* SearchVC.swift */; };
+		E3A6A7C8481F7DC1D62A8659 /* Pods_MedicalCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CBE83489842FF380F5C251 /* Pods_MedicalCode.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		077B99DB609BA1E69BF9F23F /* Pods-MedicalCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicalCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedicalCode/Pods-MedicalCode.release.xcconfig"; sourceTree = "<group>"; };
+		15CBE83489842FF380F5C251 /* Pods_MedicalCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedicalCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		456B83EEB4B5BF65DAB2425D /* Pods-MedicalCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicalCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedicalCode/Pods-MedicalCode.debug.xcconfig"; sourceTree = "<group>"; };
 		770EC99B21C6CDF900FAEFA1 /* MedicalCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		770EC99E21C6CDF900FAEFA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		770EC9A021C6CDF900FAEFA1 /* ServicesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesVC.swift; sourceTree = "<group>"; };
@@ -35,9 +45,15 @@
 		770EC9AA21C6CDF900FAEFA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		770EC9B921C6D20E00FAEFA1 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		770EC9BB21C6D8F600FAEFA1 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		77224A5F21CFA9E4000C26AF /* ClinicsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicsCell.swift; sourceTree = "<group>"; };
+		77224A6021CFA9E4000C26AF /* ClinicsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClinicsCell.xib; sourceTree = "<group>"; };
+		77224A6321CFB72E000C26AF /* UIImageView+Rounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Rounded.swift"; sourceTree = "<group>"; };
+		77224A6521CFB9E3000C26AF /* UITextField+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Style.swift"; sourceTree = "<group>"; };
 		7731B9EF21CBD00D007EF23F /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		7731B9F121CBD143007EF23F /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
 		7731B9F321CBD15F007EF23F /* AppointmentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsVC.swift; sourceTree = "<group>"; };
+		7764DD9C21CFA6DF00931FED /* SearchResults.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchResults.storyboard; sourceTree = "<group>"; };
+		7764DD9E21CFA73200931FED /* SearchResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsVC.swift; sourceTree = "<group>"; };
 		7789CBF121C6DDEE008A966B /* UIViewController+NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NavBar.swift"; sourceTree = "<group>"; };
 		7789CBF321C6DE84008A966B /* AppDelegate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Extension.swift"; sourceTree = "<group>"; };
 		7789CBF721C6E4E4008A966B /* GE_SS_Text_Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GE_SS_Text_Bold.otf; sourceTree = "<group>"; };
@@ -51,17 +67,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3A6A7C8481F7DC1D62A8659 /* Pods_MedicalCode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55F8C17EB060FA5AED4DBAB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15CBE83489842FF380F5C251 /* Pods_MedicalCode.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		770EC99221C6CDF900FAEFA1 = {
 			isa = PBXGroup;
 			children = (
 				770EC99D21C6CDF900FAEFA1 /* MedicalCode */,
 				770EC99C21C6CDF900FAEFA1 /* Products */,
+				9B0D86B2A181557067156A7E /* Pods */,
+				55F8C17EB060FA5AED4DBAB6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +129,8 @@
 		770EC9B121C6CFAD00FAEFA1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				77224A5F21CFA9E4000C26AF /* ClinicsCell.swift */,
+				77224A6021CFA9E4000C26AF /* ClinicsCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -111,6 +140,7 @@
 			children = (
 				7731B9EE21CBCFAA007EF23F /* TabBar */,
 				77B4D2E221CBC98E006EF9E2 /* Main */,
+				7764DDA021CFA73800931FED /* SearchResults */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -129,6 +159,8 @@
 				770EC9BB21C6D8F600FAEFA1 /* UIApplication+Extension.swift */,
 				7789CBF121C6DDEE008A966B /* UIViewController+NavBar.swift */,
 				7789CBF321C6DE84008A966B /* AppDelegate+Extension.swift */,
+				77224A6321CFB72E000C26AF /* UIImageView+Rounded.swift */,
+				77224A6521CFB9E3000C26AF /* UITextField+Style.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -161,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				770EC9A221C6CDF900FAEFA1 /* Main.storyboard */,
+				7764DD9C21CFA6DF00931FED /* SearchResults.storyboard */,
 				770EC9A721C6CDF900FAEFA1 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -176,6 +209,14 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		7764DDA021CFA73800931FED /* SearchResults */ = {
+			isa = PBXGroup;
+			children = (
+				7764DD9E21CFA73200931FED /* SearchResultsVC.swift */,
+			);
+			path = SearchResults;
+			sourceTree = "<group>";
+		};
 		77B4D2E221CBC98E006EF9E2 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +226,15 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		9B0D86B2A181557067156A7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				456B83EEB4B5BF65DAB2425D /* Pods-MedicalCode.debug.xcconfig */,
+				077B99DB609BA1E69BF9F23F /* Pods-MedicalCode.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -192,9 +242,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 770EC9AD21C6CDF900FAEFA1 /* Build configuration list for PBXNativeTarget "MedicalCode" */;
 			buildPhases = (
+				FD1F98F4BBF436605993A0A6 /* [CP] Check Pods Manifest.lock */,
 				770EC99721C6CDF900FAEFA1 /* Sources */,
 				770EC99821C6CDF900FAEFA1 /* Frameworks */,
 				770EC99921C6CDF900FAEFA1 /* Resources */,
+				1904FA6BCB31D7E47AC5CB92 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,6 +300,8 @@
 				7789CBFC21C6E4E4008A966B /* GE-SS-Text-Medium.otf in Resources */,
 				770EC9A621C6CDF900FAEFA1 /* Assets.xcassets in Resources */,
 				770EC9A421C6CDF900FAEFA1 /* Main.storyboard in Resources */,
+				7764DD9D21CFA6DF00931FED /* SearchResults.storyboard in Resources */,
+				77224A6221CFA9E4000C26AF /* ClinicsCell.xib in Resources */,
 				7789CBFA21C6E4E4008A966B /* GE_SS_Text_Bold.otf in Resources */,
 				7789CBFB21C6E4E4008A966B /* GE_SS_Text_Light.otf in Resources */,
 			);
@@ -255,19 +309,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1904FA6BCB31D7E47AC5CB92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MedicalCode/Pods-MedicalCode-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedicalCode/Pods-MedicalCode-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD1F98F4BBF436605993A0A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MedicalCode-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		770EC99721C6CDF900FAEFA1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77224A6421CFB72E000C26AF /* UIImageView+Rounded.swift in Sources */,
 				770EC9BA21C6D20E00FAEFA1 /* UIColor+Extension.swift in Sources */,
+				77224A6121CFA9E4000C26AF /* ClinicsCell.swift in Sources */,
 				770EC9A121C6CDF900FAEFA1 /* ServicesVC.swift in Sources */,
+				7764DD9F21CFA73200931FED /* SearchResultsVC.swift in Sources */,
 				7731B9F421CBD15F007EF23F /* AppointmentsVC.swift in Sources */,
 				770EC9BC21C6D8F600FAEFA1 /* UIApplication+Extension.swift in Sources */,
 				770EC99F21C6CDF900FAEFA1 /* AppDelegate.swift in Sources */,
 				7789CBF421C6DE84008A966B /* AppDelegate+Extension.swift in Sources */,
 				7731B9F221CBD143007EF23F /* FavoritesVC.swift in Sources */,
 				7789CBF221C6DDEE008A966B /* UIViewController+NavBar.swift in Sources */,
+				77224A6621CFB9E3000C26AF /* UITextField+Style.swift in Sources */,
 				7731B9F021CBD00D007EF23F /* TabBarVC.swift in Sources */,
 				77B4D2E421CBC9E3006EF9E2 /* SearchVC.swift in Sources */,
 			);
@@ -404,6 +503,7 @@
 		};
 		770EC9AE21C6CDF900FAEFA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 456B83EEB4B5BF65DAB2425D /* Pods-MedicalCode.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -418,6 +518,7 @@
 		};
 		770EC9AF21C6CDF900FAEFA1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 077B99DB609BA1E69BF9F23F /* Pods-MedicalCode.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

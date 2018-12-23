@@ -326,6 +326,9 @@
                                         <real key="value" value="7.5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="findDoctorBtnPressed:" destination="tpL-ns-LRD" eventType="touchUpInside" id="Pae-Nh-bN8"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ميديكال كود" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAI-0i-tYf">
                                 <rect key="frame" x="147" y="145" width="81.5" height="16"/>

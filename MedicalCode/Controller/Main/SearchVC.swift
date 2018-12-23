@@ -21,4 +21,8 @@ class SearchVC: UIViewController {
         self.setViewControllerTitle(to: "بحث")
         self.addNavItems()
     }
+    @IBAction func findDoctorBtnPressed(_ sender: UIButton) {
+        let searchResultVC = UIStoryboard(name: "SearchResults", bundle: nil).instantiateViewController(withIdentifier: "SearchResultsVC") as! SearchResultsVC
+        self.navigationController?.pushViewController(searchResultVC, animated: true)
+    }
 }

@@ -1,0 +1,20 @@
+PODS:
+  - Cosmos (17.0.0)
+  - MarqueeLabel/Swift (3.1.6)
+
+DEPENDENCIES:
+  - Cosmos
+  - MarqueeLabel/Swift
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Cosmos
+    - MarqueeLabel
+
+SPEC CHECKSUMS:
+  Cosmos: 309e489f21ffc91a1eeecfebef7f817cd2fcfba6
+  MarqueeLabel: 0c41f08ef5773e29c0f71064a8fa788a2fd8b365
+
+PODFILE CHECKSUM: fea0badffc39bf1bbda72a7080ea528023ca802d
+
+COCOAPODS: 1.5.0
