@@ -8,6 +8,9 @@ target 'MedicalCode' do
   # Pods for MedicalCode
   pod 'Cosmos'
   pod 'MarqueeLabel/Swift'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
+  pod 'AlamofireObjectMapper', '~> 5.0'
 
 end
 post_install do |installer|

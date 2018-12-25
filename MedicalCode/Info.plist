@@ -51,5 +51,10 @@
 		<string>GE_SS_Text_Light.otf</string>
 		<string>GE-SS-Text-Medium.otf</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

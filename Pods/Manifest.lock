@@ -1,20 +1,37 @@
 PODS:
+  - Alamofire (4.7.3)
+  - AlamofireObjectMapper (5.1.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 3.3)
   - Cosmos (17.0.0)
   - MarqueeLabel/Swift (3.1.6)
+  - ObjectMapper (3.3.0)
+  - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
+  - Alamofire
+  - AlamofireObjectMapper (~> 5.0)
   - Cosmos
   - MarqueeLabel/Swift
+  - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - AlamofireObjectMapper
     - Cosmos
     - MarqueeLabel
+    - ObjectMapper
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  AlamofireObjectMapper: 3395e698901d8b0e6f48b7d0c43bd47875325102
   Cosmos: 309e489f21ffc91a1eeecfebef7f817cd2fcfba6
   MarqueeLabel: 0c41f08ef5773e29c0f71064a8fa788a2fd8b365
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: fea0badffc39bf1bbda72a7080ea528023ca802d
+PODFILE CHECKSUM: 68af096ef693f535f7d19989869791dd9cd9578d
 
 COCOAPODS: 1.5.0

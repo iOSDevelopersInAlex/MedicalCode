@@ -12,7 +12,13 @@ class ServicesVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        APIManager.getServices { (error, services) in
+            if let error = error {
+                self.showAlert(title: "error", message: error)
+            } else if let services = services {
+                print(services.first?.serviceNameA)
+            }
+        }
     }
     
     // MARK: - Helper function
