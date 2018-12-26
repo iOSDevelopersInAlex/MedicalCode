@@ -270,6 +270,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OT3-V9-kZ9"/>
                     </view>
+                    <connections>
+                        <outletCollection property="servicesLabels" destination="UCF-8I-Q3r" collectionClass="NSMutableArray" id="fbq-7C-JG6"/>
+                        <outletCollection property="servicesLabels" destination="1F5-Rr-uV0" collectionClass="NSMutableArray" id="DWX-Ef-QH8"/>
+                        <outletCollection property="servicesLabels" destination="Qze-Lo-P3s" collectionClass="NSMutableArray" id="r4v-FO-ZEV"/>
+                        <outletCollection property="servicesLabels" destination="h2f-na-Qn3" collectionClass="NSMutableArray" id="M3C-MQ-hP6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XM4-qV-CYL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

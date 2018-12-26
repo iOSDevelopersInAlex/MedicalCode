@@ -9,20 +9,39 @@
 import UIKit
 
 class ServicesVC: UIViewController {
+    @IBOutlet var servicesLabels: [UILabel]!
+    var services = [Service]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.loadServices()
+    }
+    
+    // MARK: - Helper functions
+    private func loadServices() {
         APIManager.getServices { (error, services) in
             if let error = error {
                 self.showAlert(title: "error", message: error)
             } else if let services = services {
-                print(services.first?.serviceNameA)
+                self.services = services
+                self.didLoadServices()
             }
         }
     }
+    private func didLoadServices() {
+        for label in servicesLabels {
+            let serviceName = self.getServiceName(by: label.tag)
+            label.text = serviceName
+        }
+    }
+    private func getServiceName(by id: Int) -> String {
+        guard services.count != 0, let serviceName = services.first(where: {$0.id == id})?.serviceNameA else {
+            return "N/A"
+        }
+        return serviceName
+    }
     
-    // MARK: - Helper function
-    func presentByServiceId(id: Int) {
+    private func presentByServiceId(id: Int) {
         let tabBar = TabBarVC()
         let searchNav = tabBar.viewControllers![0] as! UINavigationController
         let searchVC = searchNav.viewControllers[0] as! SearchVC
@@ -30,7 +49,7 @@ class ServicesVC: UIViewController {
         self.present(tabBar, animated: true, completion: nil)
     }
     
-    
+    // MARK: - IBAction functions
     @IBAction func humanMedicineBtnPressed(_ sender: UIButton) {
         presentByServiceId(id: sender.tag)
     }
@@ -38,8 +57,6 @@ class ServicesVC: UIViewController {
         presentByServiceId(id: sender.tag)
     }
     @IBAction func homeNurse(_ sender: UIButton) {
-//        let homeNurseVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeNurseVC")
-//        self.present(UINavigationController(rootViewController: homeNurseVC), animated: true, completion: nil)
     }
     @IBAction func veterinary(_ sender: UIButton) {
         presentByServiceId(id: sender.tag)
