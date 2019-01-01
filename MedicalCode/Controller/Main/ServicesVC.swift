@@ -43,7 +43,7 @@ class ServicesVC: UIViewController {
     
     private func presentByServiceId(id: Int) {
         let tabBar = TabBarVC()
-        let searchNav = tabBar.viewControllers![0] as! UINavigationController
+        let searchNav = tabBar.viewControllers![2] as! UINavigationController
         let searchVC = searchNav.viewControllers[0] as! SearchVC
         searchVC.serviceId = id
         self.present(tabBar, animated: true, completion: nil)

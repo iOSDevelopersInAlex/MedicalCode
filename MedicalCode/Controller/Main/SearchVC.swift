@@ -8,6 +8,12 @@
 
 import UIKit
 
+
+typealias SpecializationAlias = (id: Int, name: String)
+typealias InsuranceAlias = (id: Int, name: String)
+typealias CityAlias = (id: Int, name: String)
+typealias RegionAlias = (id: Int, name: String, cityId: Int)
+
 class SearchVC: UIViewController {
     
     @IBOutlet weak var specaliazation_TF: UITextField!
@@ -35,6 +41,13 @@ class SearchVC: UIViewController {
     var companiesArr: [String]!
     var serviceId: Int!
     
+    
+    var specializationArr = [SpecializationAlias]()
+    var insuranceCompaniesArr = [InsuranceAlias]()
+    var CitiesArr = [CityAlias]()
+    var RegionsArr = [RegionAlias]()
+    var filteredRegionsArr = [RegionAlias]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -60,16 +73,19 @@ class SearchVC: UIViewController {
         createToolbar()
         dataPickerView.delegate = self
         dataPickerView.dataSource = self
+        self.loadSpecalizations(for: serviceId)
+        self.loadInsuranceCompanies()
+        self.loadCityRegions()
     }
     
     private func createToolbar() {
         let toolbar = UIToolbar()
         toolbar.barStyle = .default
         toolbar.sizeToFit()
-        let doneButton = UIBarButtonItem(title: "done", style: .plain, target: self, action: #selector(doneClicked))
+        let doneButton = UIBarButtonItem(title: "تأكيد", style: .plain, target: self, action: #selector(doneClicked))
         let spaceButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        let cancelButton = UIBarButtonItem(title: "cancelPicker", style: .plain, target: self, action: #selector(cancelClicked))
-        toolbar.setItems([doneButton, spaceButton, cancelButton], animated: false)
+        let cancelButton = UIBarButtonItem(title: "الغاء", style: .plain, target: self, action: #selector(cancelClicked))
+        toolbar.setItems([cancelButton, spaceButton, doneButton], animated: false)
         
         specaliazation_TF.inputAccessoryView = toolbar
         companies_TF.inputAccessoryView = toolbar
@@ -81,24 +97,24 @@ class SearchVC: UIViewController {
         case specaliazation_TF:
             if let selectedSpecialization = selectedSpecialization {
                 active_txtField.text = selectedSpecialization
-                //self.selectedSpecializationID = viewModel.getSpecalizationId(with: selectedSpecialization)
+                self.selectedSpecializationID = self.getSpecalizationId(with: selectedSpecialization)
             }
         case companies_TF:
             if let selectedInsuranceCompany = selectedInsuranceCompany {
                 active_txtField.text = selectedInsuranceCompany
-                //self.selectedInsuranceID = viewModel.getInsuranceId(with: selectedInsuranceCompany)
+                self.selectedInsuranceID = self.getInsuranceId(with: selectedInsuranceCompany)
             }
         case city_TF:
             if let selectedCity = selectedCity {
                 active_txtField.text = selectedCity
-                region_TF.text = "ChooseRegion"
-//                self.selectedCityID = viewModel.getCityId(with: selectedCity)
-//                self.viewModel.setFilteredRegionsArr(cityId: selectedCityID)
+                region_TF.text = "اختر منطقة"
+                self.selectedCityID = self.getCityId(with: selectedCity)
+                self.setFilteredRegionsArr(cityId: selectedCityID)
             }
         case region_TF:
             if let selectedRegion = selectedRegion {
                 active_txtField.text = selectedRegion
-                //self.selectedRegionID = viewModel.getRegionId(with: selectedRegion)
+                self.selectedRegionID = self.getRegionId(with: selectedRegion)
             }
         default:
             return
@@ -118,7 +134,153 @@ class SearchVC: UIViewController {
         active_txtField.resignFirstResponder()
     }
     
+    
+    // MARK: - Specalizations functions
+    func loadSpecalizations(for serviceId: Int) {
+        self.specializationArr.removeAll()
+        specializationArr = [SpecializationAlias( 0, "اختر الكل")]
+        APIManager.getSpecalizations(serviceId: serviceId) { (error, specalizationArr) in
+            if let error = error {
+                self.showAlert(title: "عذرا", message: error)
+                print(error)
+            } else if let specalizationArr = specalizationArr {
+                
+                for specalization in specalizationArr {
+                    self.specializationArr.append(SpecializationAlias(specalization.id ?? 0 , specalization.nameA ?? ""))
+                }
+                self.dataPickerView.reloadAllComponents()
+            }
+        }
+    }
+    
+    func getSpecalizationsCount() -> Int {
+        return specializationArr.count
+    }
+    
+    func getSpecalizationName(at index: Int) -> String {
+        if index == 0 && specializationArr.count == 0 {
+            return ""
+        }
+        return specializationArr[index].name
+    }
+    
+    func getSpecalizationId(with specalizationName: String) -> Int {
+        guard let selectedSpecalization = specializationArr.first(where: {$0.name == specalizationName})?.id else {return 0}
+        return selectedSpecalization
+    }
+    
+    // MARK: - InsuranceCompanies functions
+    func loadInsuranceCompanies() {
+        self.insuranceCompaniesArr.removeAll()
+        insuranceCompaniesArr = [InsuranceAlias( 0, "اختر الكل")]
+        APIManager.getInsuranceCompanies { (error, insuranceCompaniesArr) in
+            if let error = error {
+                self.showAlert(title: "عذرا", message: error)
+                print(error)
+            } else if let insuranceCompaniesArr = insuranceCompaniesArr {
+                
+                for insuranceCompany in insuranceCompaniesArr {
+                    self.insuranceCompaniesArr.append(InsuranceAlias(insuranceCompany.id ?? 0, insuranceCompany.companyNameA ?? ""))
+                }
+                self.dataPickerView.reloadAllComponents()
+            }
+        }
+    }
+    
+    func getInsuranceCompaniesCount() -> Int {
+        return insuranceCompaniesArr.count
+    }
+    
+    func getInsuranceCompanyName(at index: Int) -> String {
+        if index == 0 && insuranceCompaniesArr.count == 0 {
+            return ""
+        }
+        return insuranceCompaniesArr[index].name
+    }
+    
+    func getInsuranceId(with insuranceCompanyName: String) -> Int {
+        guard let selectedInsuranceCompany = insuranceCompaniesArr.first(where: {$0.name == insuranceCompanyName})?.id else {return 0}
+        return selectedInsuranceCompany
+    }
+    
+    // MARK: - CityRegion functions
+    func loadCityRegions() {
+        self.CitiesArr.removeAll()
+        self.RegionsArr.removeAll()
+        CitiesArr = [CityAlias( 0, "اختر الكل")]
+        APIManager.getCityRegion { (error, data) in
+            if let error = error {
+                self.showAlert(title: "عذرا", message: error)
+                print(error)
+            } else if let data = data {
+                
+                for item in data {
+                    if !self.CitiesArr.contains(where: { $0.name == item.cityNameA ?? "" }) {
+                        self.CitiesArr.append(CityAlias(item.cityId ?? 0 , item.cityNameA ?? ""))
+                    }
+                    self.RegionsArr.append(RegionAlias(item.regionId ?? 0, item.regionNameA ?? "", item.cityId ?? 0))
+                }
+                self.dataPickerView.reloadAllComponents()
+            }
+        }
+    }
+    // MARK: - Cities functions
+    func getCitiesCount() -> Int {
+        return CitiesArr.count
+    }
+    
+    func getCityName(at index: Int) -> String {
+        if index == 0 && CitiesArr.count == 0 {
+            return ""
+        }
+        return CitiesArr[index].name
+    }
+    
+    func getCityId(with cityName: String) -> Int {
+        guard let selectedCity = CitiesArr.first(where: {$0.name == cityName})?.id else {return 0}
+        return selectedCity
+    }
+    // MARK: - Regions functions
+    func setFilteredRegionsArr(cityId: Int) {
+        self.filteredRegionsArr.removeAll()
+        self.filteredRegionsArr = [RegionAlias( 0, "اختر الكل", 0)]
+        if RegionsArr.count != 0 {
+            let filteredRegionsArr = self.RegionsArr.filter { $0.cityId == cityId }
+            if !filteredRegionsArr.contains(where: { $0.name == "اختر الكل" }) {
+                self.filteredRegionsArr.append(contentsOf: filteredRegionsArr)
+            }
+        }
+    }
+    
+    func getRegionsCount() -> Int {
+        return filteredRegionsArr.count
+    }
+    
+    func getRegionName(at index: Int) -> String {
+        if index == 0 && filteredRegionsArr.count == 0 {
+            return ""
+        }
+        return filteredRegionsArr[index].name
+    }
+    
+    func getRegionId(with regionName: String) -> Int {
+        guard let selectedRegion = filteredRegionsArr.first(where: {$0.name == regionName})?.id else {return 0}
+        return selectedRegion
+    }
+
     @IBAction func findDoctorBtnPressed(_ sender: UIButton) {
+        
+        guard Validator.isOneFieldSelected(speciality: self.specaliazation_TF.text, city: self.city_TF.text, region: self.region_TF.text, company: self.companies_TF.text) else {
+            self.showAlert(title: "عذرا", message: "يجب ان تختار عنصر واحد علي الاقل")
+            return
+        }
+        
+        let doctorName = Validator.getDoctorName(doctorName: doctorName_TF.text)
+        let patientId = Helper.getPatientID() != nil ? "\(String(describing: Helper.getPatientID()!))" : nil
+        let searchData = SearchData(serviceId: "\(String(describing: serviceId!))",patientId: patientId, cityId: "\(String(describing: selectedCityID))", regionId: "\(String(describing: selectedRegionID))", specialityId: "\(String(describing: selectedSpecializationID))", insuranceId: "\(String(describing: selectedInsuranceID))", doctorName: doctorName, page: "1", sortBy: "0", longitude: "", latitude: "", perpage: "3")
+        
+        print("<----- searchData: ",searchData.cityId, searchData.regionId, searchData.specialityId, searchData.insuranceId, doctorName)
+        
         let searchResultVC = UIStoryboard(name: "SearchResults", bundle: nil).instantiateViewController(withIdentifier: "SearchResultsVC") as! SearchResultsVC
         self.navigationController?.pushViewController(searchResultVC, animated: true)
     }
@@ -134,13 +296,13 @@ extension SearchVC: UIPickerViewDataSource, UIPickerViewDelegate {
         
         switch active_txtField {
         case specaliazation_TF:
-            return self.specaliazationArr.count
+            return self.getSpecalizationsCount()
         case companies_TF:
-            return self.companiesArr.count
+            return self.getInsuranceCompaniesCount()
         case city_TF:
-            return self.cityArr.count
+            return self.getCitiesCount()
         case region_TF:
-            return self.regionArr.count
+            return self.getRegionsCount()
         default:
             return 0
         }
@@ -150,13 +312,13 @@ extension SearchVC: UIPickerViewDataSource, UIPickerViewDelegate {
         
         switch active_txtField {
         case specaliazation_TF:
-            return specaliazationArr[row]
+            return self.getSpecalizationName(at: row)
         case companies_TF:
-            return companiesArr[row]
+            return self.getInsuranceCompanyName(at: row)
         case city_TF:
-            return cityArr[row]
+            return self.getCityName(at: row)
         case region_TF:
-            return regionArr[row]
+            return self.getRegionName(at: row)
         default:
             return ""
         }
@@ -166,13 +328,13 @@ extension SearchVC: UIPickerViewDataSource, UIPickerViewDelegate {
         self.itemSelected = true
         switch active_txtField {
         case specaliazation_TF:
-            selectedSpecialization = specaliazationArr[row]
+            selectedSpecialization = self.getSpecalizationName(at: row)
         case companies_TF:
-            selectedInsuranceCompany = companiesArr[row]
+            selectedInsuranceCompany = self.getInsuranceCompanyName(at: row)
         case city_TF:
-            selectedCity = cityArr[row]
+            selectedCity = self.getCityName(at: row)
         case region_TF:
-            selectedRegion = regionArr[row]
+            selectedRegion = self.getRegionName(at: row)
         default:
             return
         }

@@ -22,6 +22,31 @@
 		77224A6221CFA9E4000C26AF /* ClinicsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77224A6021CFA9E4000C26AF /* ClinicsCell.xib */; };
 		77224A6421CFB72E000C26AF /* UIImageView+Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77224A6321CFB72E000C26AF /* UIImageView+Rounded.swift */; };
 		77224A6621CFB9E3000C26AF /* UITextField+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77224A6521CFB9E3000C26AF /* UITextField+Style.swift */; };
+		7727055221DB7BA600DDE785 /* APIManager+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727055121DB7BA600DDE785 /* APIManager+Search.swift */; };
+		7727055D21DB7C8C00DDE785 /* Specialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727055721DB7C8B00DDE785 /* Specialization.swift */; };
+		7727055E21DB7C8C00DDE785 /* CompaniesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727055821DB7C8B00DDE785 /* CompaniesResponse.swift */; };
+		7727055F21DB7C8C00DDE785 /* CityRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727055921DB7C8B00DDE785 /* CityRegion.swift */; };
+		7727056021DB7C8C00DDE785 /* SpecializationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727055A21DB7C8B00DDE785 /* SpecializationResponse.swift */; };
+		7727056121DB7C8C00DDE785 /* InsuranceCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727055B21DB7C8C00DDE785 /* InsuranceCompany.swift */; };
+		7727056221DB7C8C00DDE785 /* CityRegionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727055C21DB7C8C00DDE785 /* CityRegionResponse.swift */; };
+		7727056421DB8B3400DDE785 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727056321DB8B3400DDE785 /* Validator.swift */; };
+		7727056621DB8D8800DDE785 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727056521DB8D8800DDE785 /* Helper.swift */; };
+		7727056821DB8E2400DDE785 /* APIManager+SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727056721DB8E2400DDE785 /* APIManager+SearchResults.swift */; };
+		7727056F21DB8EA600DDE785 /* SubSpecialityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727056C21DB8EA500DDE785 /* SubSpecialityList.swift */; };
+		7727057021DB8EA600DDE785 /* Clinic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727056D21DB8EA500DDE785 /* Clinic.swift */; };
+		7727057121DB8EA600DDE785 /* SearchResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727056E21DB8EA500DDE785 /* SearchResultResponse.swift */; };
+		7727058121DB8F1100DDE785 /* ClinicPhotoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727057521DB8F0F00DDE785 /* ClinicPhotoList.swift */; };
+		7727058221DB8F1100DDE785 /* ClinicServicesListAr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727057621DB8F1000DDE785 /* ClinicServicesListAr.swift */; };
+		7727058321DB8F1100DDE785 /* ClinicInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727057721DB8F1000DDE785 /* ClinicInfo.swift */; };
+		7727058421DB8F1100DDE785 /* ClinicServicesListEn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727057821DB8F1000DDE785 /* ClinicServicesListEn.swift */; };
+		7727058521DB8F1100DDE785 /* ClinicShifts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727057921DB8F1000DDE785 /* ClinicShifts.swift */; };
+		7727058621DB8F1100DDE785 /* ReviewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727057A21DB8F1000DDE785 /* ReviewList.swift */; };
+		7727058721DB8F1100DDE785 /* ClinicInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727057B21DB8F1000DDE785 /* ClinicInfoResponse.swift */; };
+		7727058821DB8F1100DDE785 /* AppointmentsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727057C21DB8F1100DDE785 /* AppointmentsInfo.swift */; };
+		7727058921DB8F1100DDE785 /* Times.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727057D21DB8F1100DDE785 /* Times.swift */; };
+		7727058A21DB8F1100DDE785 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727057E21DB8F1100DDE785 /* Appointment.swift */; };
+		7727058B21DB8F1100DDE785 /* ClinicInsuranceCompaniesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727057F21DB8F1100DDE785 /* ClinicInsuranceCompaniesList.swift */; };
+		7727058C21DB8F1100DDE785 /* ClinicDateAvailableAppointmentsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727058021DB8F1100DDE785 /* ClinicDateAvailableAppointmentsList.swift */; };
 		7731B9F021CBD00D007EF23F /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731B9EF21CBD00D007EF23F /* TabBarVC.swift */; };
 		7731B9F221CBD143007EF23F /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731B9F121CBD143007EF23F /* FavoritesVC.swift */; };
 		7731B9F421CBD15F007EF23F /* AppointmentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731B9F321CBD15F007EF23F /* AppointmentsVC.swift */; };
@@ -57,6 +82,31 @@
 		77224A6021CFA9E4000C26AF /* ClinicsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClinicsCell.xib; sourceTree = "<group>"; };
 		77224A6321CFB72E000C26AF /* UIImageView+Rounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Rounded.swift"; sourceTree = "<group>"; };
 		77224A6521CFB9E3000C26AF /* UITextField+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Style.swift"; sourceTree = "<group>"; };
+		7727055121DB7BA600DDE785 /* APIManager+Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIManager+Search.swift"; sourceTree = "<group>"; };
+		7727055721DB7C8B00DDE785 /* Specialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specialization.swift; sourceTree = "<group>"; };
+		7727055821DB7C8B00DDE785 /* CompaniesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompaniesResponse.swift; sourceTree = "<group>"; };
+		7727055921DB7C8B00DDE785 /* CityRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityRegion.swift; sourceTree = "<group>"; };
+		7727055A21DB7C8B00DDE785 /* SpecializationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecializationResponse.swift; sourceTree = "<group>"; };
+		7727055B21DB7C8C00DDE785 /* InsuranceCompany.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsuranceCompany.swift; sourceTree = "<group>"; };
+		7727055C21DB7C8C00DDE785 /* CityRegionResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityRegionResponse.swift; sourceTree = "<group>"; };
+		7727056321DB8B3400DDE785 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		7727056521DB8D8800DDE785 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		7727056721DB8E2400DDE785 /* APIManager+SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIManager+SearchResults.swift"; sourceTree = "<group>"; };
+		7727056C21DB8EA500DDE785 /* SubSpecialityList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubSpecialityList.swift; sourceTree = "<group>"; };
+		7727056D21DB8EA500DDE785 /* Clinic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clinic.swift; sourceTree = "<group>"; };
+		7727056E21DB8EA500DDE785 /* SearchResultResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultResponse.swift; sourceTree = "<group>"; };
+		7727057521DB8F0F00DDE785 /* ClinicPhotoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClinicPhotoList.swift; sourceTree = "<group>"; };
+		7727057621DB8F1000DDE785 /* ClinicServicesListAr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClinicServicesListAr.swift; sourceTree = "<group>"; };
+		7727057721DB8F1000DDE785 /* ClinicInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClinicInfo.swift; sourceTree = "<group>"; };
+		7727057821DB8F1000DDE785 /* ClinicServicesListEn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClinicServicesListEn.swift; sourceTree = "<group>"; };
+		7727057921DB8F1000DDE785 /* ClinicShifts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClinicShifts.swift; sourceTree = "<group>"; };
+		7727057A21DB8F1000DDE785 /* ReviewList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewList.swift; sourceTree = "<group>"; };
+		7727057B21DB8F1000DDE785 /* ClinicInfoResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClinicInfoResponse.swift; sourceTree = "<group>"; };
+		7727057C21DB8F1100DDE785 /* AppointmentsInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppointmentsInfo.swift; sourceTree = "<group>"; };
+		7727057D21DB8F1100DDE785 /* Times.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Times.swift; sourceTree = "<group>"; };
+		7727057E21DB8F1100DDE785 /* Appointment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		7727057F21DB8F1100DDE785 /* ClinicInsuranceCompaniesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClinicInsuranceCompaniesList.swift; sourceTree = "<group>"; };
+		7727058021DB8F1100DDE785 /* ClinicDateAvailableAppointmentsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClinicDateAvailableAppointmentsList.swift; sourceTree = "<group>"; };
 		7731B9EF21CBD00D007EF23F /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		7731B9F121CBD143007EF23F /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
 		7731B9F321CBD15F007EF23F /* AppointmentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsVC.swift; sourceTree = "<group>"; };
@@ -157,6 +207,8 @@
 		770EC9B321C6D00A00FAEFA1 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				7727056321DB8B3400DDE785 /* Validator.swift */,
+				7727056521DB8D8800DDE785 /* Helper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -186,6 +238,8 @@
 			isa = PBXGroup;
 			children = (
 				772052DF21D2B4D500DFD91F /* APIManager.swift */,
+				7727055121DB7BA600DDE785 /* APIManager+Search.swift */,
+				7727056721DB8E2400DDE785 /* APIManager+SearchResults.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -213,10 +267,63 @@
 		772052D821D2AE6400DFD91F /* MappedModel */ = {
 			isa = PBXGroup;
 			children = (
+				7727057221DB8EEB00DDE785 /* ClinicInfo */,
+				7727056921DB8E6200DDE785 /* SearchResults */,
+				7727055421DB7C2C00DDE785 /* Search */,
+				7727055321DB7C2200DDE785 /* Services */,
+			);
+			path = MappedModel;
+			sourceTree = "<group>";
+		};
+		7727055321DB7C2200DDE785 /* Services */ = {
+			isa = PBXGroup;
+			children = (
 				772052D921D2B05100DFD91F /* ServiceResponse.swift */,
 				772052DA21D2B05100DFD91F /* Service.swift */,
 			);
-			path = MappedModel;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7727055421DB7C2C00DDE785 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				7727055921DB7C8B00DDE785 /* CityRegion.swift */,
+				7727055C21DB7C8C00DDE785 /* CityRegionResponse.swift */,
+				7727055821DB7C8B00DDE785 /* CompaniesResponse.swift */,
+				7727055B21DB7C8C00DDE785 /* InsuranceCompany.swift */,
+				7727055721DB7C8B00DDE785 /* Specialization.swift */,
+				7727055A21DB7C8B00DDE785 /* SpecializationResponse.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		7727056921DB8E6200DDE785 /* SearchResults */ = {
+			isa = PBXGroup;
+			children = (
+				7727056D21DB8EA500DDE785 /* Clinic.swift */,
+				7727056E21DB8EA500DDE785 /* SearchResultResponse.swift */,
+				7727056C21DB8EA500DDE785 /* SubSpecialityList.swift */,
+			);
+			path = SearchResults;
+			sourceTree = "<group>";
+		};
+		7727057221DB8EEB00DDE785 /* ClinicInfo */ = {
+			isa = PBXGroup;
+			children = (
+				7727057E21DB8F1100DDE785 /* Appointment.swift */,
+				7727057C21DB8F1100DDE785 /* AppointmentsInfo.swift */,
+				7727058021DB8F1100DDE785 /* ClinicDateAvailableAppointmentsList.swift */,
+				7727057721DB8F1000DDE785 /* ClinicInfo.swift */,
+				7727057B21DB8F1000DDE785 /* ClinicInfoResponse.swift */,
+				7727057F21DB8F1100DDE785 /* ClinicInsuranceCompaniesList.swift */,
+				7727057521DB8F0F00DDE785 /* ClinicPhotoList.swift */,
+				7727057621DB8F1000DDE785 /* ClinicServicesListAr.swift */,
+				7727057821DB8F1000DDE785 /* ClinicServicesListEn.swift */,
+				7727057921DB8F1000DDE785 /* ClinicShifts.swift */,
+				7727057A21DB8F1000DDE785 /* ReviewList.swift */,
+				7727057D21DB8F1100DDE785 /* Times.swift */,
+			);
+			path = ClinicInfo;
 			sourceTree = "<group>";
 		};
 		7731B9EE21CBCFAA007EF23F /* TabBar */ = {
@@ -386,21 +493,46 @@
 				77224A6421CFB72E000C26AF /* UIImageView+Rounded.swift in Sources */,
 				772052DB21D2B05100DFD91F /* ServiceResponse.swift in Sources */,
 				770EC9BA21C6D20E00FAEFA1 /* UIColor+Extension.swift in Sources */,
+				7727058C21DB8F1100DDE785 /* ClinicDateAvailableAppointmentsList.swift in Sources */,
 				77224A6121CFA9E4000C26AF /* ClinicsCell.swift in Sources */,
+				7727056421DB8B3400DDE785 /* Validator.swift in Sources */,
+				7727056621DB8D8800DDE785 /* Helper.swift in Sources */,
+				7727058421DB8F1100DDE785 /* ClinicServicesListEn.swift in Sources */,
+				7727055E21DB7C8C00DDE785 /* CompaniesResponse.swift in Sources */,
+				7727058921DB8F1100DDE785 /* Times.swift in Sources */,
+				7727056021DB7C8C00DDE785 /* SpecializationResponse.swift in Sources */,
 				772052DE21D2B3B500DFD91F /* Config.swift in Sources */,
+				7727058521DB8F1100DDE785 /* ClinicShifts.swift in Sources */,
+				7727056221DB7C8C00DDE785 /* CityRegionResponse.swift in Sources */,
+				7727057021DB8EA600DDE785 /* Clinic.swift in Sources */,
 				770EC9A121C6CDF900FAEFA1 /* ServicesVC.swift in Sources */,
 				7764DD9F21CFA73200931FED /* SearchResultsVC.swift in Sources */,
 				7731B9F421CBD15F007EF23F /* AppointmentsVC.swift in Sources */,
+				7727058221DB8F1100DDE785 /* ClinicServicesListAr.swift in Sources */,
 				770EC9BC21C6D8F600FAEFA1 /* UIApplication+Extension.swift in Sources */,
 				770EC99F21C6CDF900FAEFA1 /* AppDelegate.swift in Sources */,
 				7789CBF421C6DE84008A966B /* AppDelegate+Extension.swift in Sources */,
+				7727055F21DB7C8C00DDE785 /* CityRegion.swift in Sources */,
+				7727055221DB7BA600DDE785 /* APIManager+Search.swift in Sources */,
+				7727056121DB7C8C00DDE785 /* InsuranceCompany.swift in Sources */,
+				7727058821DB8F1100DDE785 /* AppointmentsInfo.swift in Sources */,
+				7727058321DB8F1100DDE785 /* ClinicInfo.swift in Sources */,
 				7731B9F221CBD143007EF23F /* FavoritesVC.swift in Sources */,
+				7727058721DB8F1100DDE785 /* ClinicInfoResponse.swift in Sources */,
+				7727056F21DB8EA600DDE785 /* SubSpecialityList.swift in Sources */,
+				7727058B21DB8F1100DDE785 /* ClinicInsuranceCompaniesList.swift in Sources */,
 				772052E021D2B4D500DFD91F /* APIManager.swift in Sources */,
 				7789CBF221C6DDEE008A966B /* UIViewController+NavBar.swift in Sources */,
+				7727057121DB8EA600DDE785 /* SearchResultResponse.swift in Sources */,
 				77224A6621CFB9E3000C26AF /* UITextField+Style.swift in Sources */,
+				7727058A21DB8F1100DDE785 /* Appointment.swift in Sources */,
 				7731B9F021CBD00D007EF23F /* TabBarVC.swift in Sources */,
+				7727058621DB8F1100DDE785 /* ReviewList.swift in Sources */,
 				77B4D2E421CBC9E3006EF9E2 /* SearchVC.swift in Sources */,
+				7727056821DB8E2400DDE785 /* APIManager+SearchResults.swift in Sources */,
 				772052DC21D2B05100DFD91F /* Service.swift in Sources */,
+				7727055D21DB7C8C00DDE785 /* Specialization.swift in Sources */,
+				7727058121DB8F1100DDE785 /* ClinicPhotoList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
